@@ -1,0 +1,190 @@
+/* Colors */
+:root {
+    --color-default: #212529;
+    --color-primary: #ce1212;
+    --color-secondary: #37373f;
+  }
+
+
+.btn_read_more{
+    background-color: transparent;
+    color: var(--color-primary);
+    border-radius: 50px;
+    border: 1px solid var(--color-primary);
+    padding: 5px 30px;
+}
+
+.btn_read_more:hover{
+    background-color: var(--color-primary) !important;
+    color: white !important;
+}
+
+
+
+/*--------------------------------------------------------------
+# programs Section
+--------------------------------------------------------------*/
+.programs_box .why-box {
+    padding: 30px;
+    background: var(--color-primary);
+    color: #fff;
+  }
+
+  .programs_box .why-box h3 {
+    font-weight: 700;
+    font-size: 34px;
+    margin-bottom: 30px;
+
+  }
+
+  .programs_box .why-box p {
+    margin-bottom: 30px;
+  }
+
+
+  .programs_box .icon-box {
+    text-align: center;
+    background: #fff;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    border: 1px solid rgba(55, 55, 63, 0.1);
+    transition: 0.3s;
+    position: relative;
+  }
+
+  .programs_box .icon-box img{
+    width: 100%;
+    height: 100%;
+    z-index: 4;
+  }
+
+  .programs_box .overlay{
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    transition: 0.3s;
+    padding: 15px;
+  }
+
+  .programs_box .overlay h4 {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top:45%;
+    font-family: var(--font-secondary);
+    color: white;
+  }
+
+  .programs_box .icon-box:hover > .overlay {
+    transition: 0.5s;
+    z-index: 5;
+  }
+
+  /* .programs_box .overlay:hover > h4{
+    display: block;
+  }
+   */
+
+   .programs_box{
+    direction: ltr !important;
+   }
+  .programs_box .icon-box p {
+    font-size: 15px;
+    color: #6c757d;
+  }
+
+  @media (min-width: 1200px) {
+    .programs_box .icon-box:hover {
+      transform: scale(1.05);
+    }
+  }
+
+
+  @media (max-width: 1200px) {
+    .my_slide img{
+        height: 50vh !important;
+    }
+    .my_slide .carousel-caption{
+        left: 2%;
+        top: 3%;
+        width: 95%;
+        font-size: 16px;
+    }
+  }
+
+  .title_department{
+    font-size: 35px;
+    font-weight: bolder;
+    color: #6c757d;
+  }
+
+  .title_main{
+    font-size: 35px;
+    font-weight: bolder;
+    color: #ce1212;
+  }
+
+
+  .title_second{
+    font-size: 25px;
+    font-weight: bold;
+    color: #6c757d;
+  }
+
+  @media (max-width: 1200px) {
+    .title_department{
+        font-size: 24px;
+        font-weight: bold;
+        color: #6c757d;
+      }
+
+  }
+
+  .deploma_box ul {
+    list-style: none; /* Remove default bullets */
+  }
+
+  .deploma_box ul li::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: #ce1212; /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+  }
+
+  .deploma_box h4 {
+   position: relative;
+  }
+
+  .deploma_box h4::before {
+    position: absolute;
+    content: "";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    width: 80px; /* Also needed for space (tweak if needed) */
+    height: 4px;
+    background-color: #ce1212;
+    left: 0;
+    bottom: -5px;
+  }
+
+  .bg_color{
+    padding: 20px;
+    color: #fff;
+    background-color: #ec2727;
+    border-radius: 20px;
+    margin-top: 50px;
+  }
+
+  .bg_color button{
+    border: 2px solid #fff;
+    border-radius: 20px;
+    color: #fff;
+  }
+
+  .bg_color button:hover{
+    background-color: #fff !important;
+    border: 2px solid #fff;
+    color: #ec2727 !important;
+  }
